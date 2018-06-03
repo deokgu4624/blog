@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+ * {
+    box-sizing: border-box;
+    }
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    color: #f1f1f1;
+    min-width: 100%;
+    top: 50%;
+    text-align: center;
+}
+.content ul{
+    list-style-type: none;
+}
+.content li{
+    display: inline;
+    padding: 100px;
+    letter-spacing: 4px;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="./video/Sequence 01.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+    <ul>
+        <li>Plot</li>
+        <li>Cast</li>
+        <li>Trailer</li>
+        <li>OST</li>
+        <li>Best Quetes</li>
+    </ul>
+  
+</div>
+</body>
+</html>
