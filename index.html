@@ -5,58 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
- * {
-    box-sizing: border-box;
-    }
-
-body {
-    margin: 0;
-    font-family: Arial;
-    font-size: 17px;
-    background-color: black;
-}
-
+<style>
+ * {box-sizing: border-box;}
+body{margin: 0;font-family: Arial;font-size: 17px;background-color: black;}
+/* background image */
 .myslides{-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s;
     position: fixed; top: 0; right: 0; min-width: 100%; min-height: 100%;}
 @-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
 @keyframes fade {from {opacity: .4} to {opacity: 1}}
+/* background music */
 #myAudio{display: none;}
-.content {
-    position: fixed;
-    color: #f1f1f1;
-    min-width: 100%;
-    top: 50%;
-    text-align: center;
-}
-.content ul{
-    list-style-type: none;
-}
-.content li{
-    display: inline;
-    padding: 5%;
-    letter-spacing: 4px;
-}
+.content{position: fixed;color: #f1f1f1;min-width: 100%;top: 50%;text-align: center;}
+.content ul{list-style-type: none;}
+.content li{display: inline;padding: 5%;letter-spacing: 4px;}
+.content li a:link{color: white; text-decoration: none;}
+.content li a:visited{color: white;}
+.content li a:hover{text-decoration: line-through;}
 </style>
 </head>
 <body>
     <img class="myslides" src="./img/Sequence 01.Still001.jpg" alt="">
     <img class="myslides" src="./img/Sequence 01.Still002.jpg" alt="">
+    <img class="myslides" src="./img/Sequence 01.Still003.jpg" alt="">
     
-<audio controls autoplay id="myAudio">
+    <audio controls autoplay id="myAudio">
     <source src="./audio/Hans Zimmer - The Dark Knight OST - A Dark Knight - HD.mp3" type="audio/mpeg">
-   
-  </audio> 
-<div class="content">
+    </audio> 
+    <div class="content">
     <ul>
-        <li>Plot</li>
-        <li>Cast</li>
-        <li>Trailer</li>
-        <li>OST</li>
-        <li>Best Quotes</li>
+        <li><a href="./plot.html">Plot</a></li>
+        <li><a href="./cast.html">Cast</a></li>
+        <li><a href="./trailer.html">Trailer</a></li>
+        <li><a href="./ost.html">OST</a></li>
+        <li><a href="./bestquotes.html">Best Quotes</a></li>
     </ul>
-  
-</div>
+    </div>
 <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
