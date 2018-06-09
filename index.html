@@ -21,6 +21,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.background-music{display: none;}
 h1{position: fixed;top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .menu{list-style-type: none; position: fixed;top: 0;left: 50%;transform: translate(-60%, 0);}
 .bottom{list-style-type: none; position: fixed;bottom: 0;left: 50%;transform: translate(-50%, 0);}
@@ -28,27 +29,28 @@ li{display:inline;}
 </style>
 </head>
 <body>
-<div class="bg"></div>
-<div class="menu">
-    <ul>
-        <li>About</li>
-        <li>Cast</li>
-        <li>Trailer</li>
-        <li>SoundTrack</li>
-        <li>BestQuotes</li>
-    </ul>
-</div>
-<div class="bottom">
-    <ul>
-        <li>Christian Bale</li>
-        <li>Michael Cane</li>
-        <li>Heath Legder</li>
-        <li>Gary Oldman</li>
-        <li>Aaron Eckhart</li>
-        <li>Maggie Gyllenhaal</li>
-        <li>Morgan Freeman</li>
-    </ul>
-</div>
-<h1>I believe whatever doesn't kill you simply makes you... stanger.</h1>
+    <audio controls autoplay loop class="background-music" src="./audio/Hans Zimmer - The Dark Knight OST - A Dark Knight - HD.mp3"></audio>
+    <div class="bg"></div>
+    <div class="menu">
+        <ul>
+            <li>About</li>
+            <li>Cast</li>
+            <li>Trailer</li>
+            <li>SoundTrack</li>
+            <li>BestQuotes</li>
+        </ul>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li>Christian Bale</li>
+            <li>Michael Cane</li>
+            <li>Heath Legder</li>
+            <li>Gary Oldman</li>
+            <li>Aaron Eckhart</li>
+            <li>Maggie Gyllenhaal</li>
+            <li>Morgan Freeman</li>
+        </ul>
+    </div>
+    <h1>I believe whatever doesn't kill you simply makes you... stanger.</h1>
 </body>
 </html>
