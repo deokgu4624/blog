@@ -7,27 +7,17 @@
     <title>Document</title>
 <style>
  * {box-sizing: border-box;}
-body{margin: 0;font-family: Arial;font-size: 17px;background-color: black;}
-/* background image */
-.myslides{-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s;
-    position: fixed; top: 0; right: 0; min-width: 100%; min-height: 100%;}
-@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
-@keyframes fade {from {opacity: .4} to {opacity: 1}}
-/* background music */
+body{width:800px;margin: 0 auto;font-family: Arial;font-size: 17px;background-color: black;color: white;}
+.content{text-align: center;}
 #myAudio{display: none;}
-.content{position: fixed;color: #f1f1f1;min-width: 100%;top: 50%;text-align: center;}
-.content ul{list-style-type: none;}
-.content li{display: inline;padding: 5%;letter-spacing: 4px;}
-.content li a:link{color: white; text-decoration: none;}
-.content li a:visited{color: white;}
-.content li a:hover{text-decoration: line-through;}
+img{display: block; margin: 0 auto; margin-top: 140px; margin-bottom: 40px;}
 </style>
 </head>
 <body>
-    
+    <img src="./img/KakaoTalk_20180609_213146562.jpg" alt="">
     <audio controls autoplay id="myAudio">
     <source src="./audio/Hans Zimmer - The Dark Knight OST - A Dark Knight - HD.mp3" type="audio/mpeg">
-    </audio> 
+    </audio>
     <div class="content">
     It's not who I am underneath, but what I do, that defines me</br>
     나를 정의하는 것은, 내가 가지고 있는 생각이 아니라, 내가 하는 행동이다.
