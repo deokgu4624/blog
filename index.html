@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
- * {box-sizing: border-box;}
-body{width:800px;margin: 0 auto;font-family: Arial;font-size: 17px;background-color: black;color: white;}
-.content{text-align: center;}
-#myAudio{display: none;}
-img{display: block; margin: 0 auto; margin-top: 140px; margin-bottom: 40px;}
+body, html {
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("./img/366570.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{position: fixed;top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.menu{list-style-type: none; position: fixed;top: 0;left: 50%;transform: translate(-60%, 0);}
+.bottom{list-style-type: none; position: fixed;bottom: 0;left: 50%;transform: translate(-50%, 0);}
+li{display:inline;}
 </style>
 </head>
 <body>
-    <img src="./img/KakaoTalk_20180609_213146562.jpg" alt="">
-    <audio controls autoplay id="myAudio">
-    <source src="./audio/Hans Zimmer - The Dark Knight OST - A Dark Knight - HD.mp3" type="audio/mpeg">
-    </audio>
-    <div class="content">
-    <p>It is not who I am underneath, but what I do, that defines me</p>
-    <p>나를 정의하는 것은, 내가 가지고 있는 생각이 아니라, 내가 하는 행동이다.</p>
-    <p>-브루스 웨인-</p>
-    </div>
-<script type="text/javascript" src="./js/script.js"></script>
+<div class="bg"></div>
+<div class="menu">
+    <ul>
+        <li>About</li>
+        <li>Cast</li>
+        <li>Trailer</li>
+        <li>SoundTrack</li>
+        <li>BestQuotes</li>
+    </ul>
+</div>
+<div class="bottom">
+    <ul>
+        <li>Christian Bale</li>
+        <li>Michael Cane</li>
+        <li>Heath Legder</li>
+        <li>Gary Oldman</li>
+        <li>Aaron Eckhart</li>
+        <li>Maggie Gyllenhaal</li>
+        <li>Morgan Freeman</li>
+    </ul>
+</div>
+<h1>I believe whatever doesn't kill you simply makes you... stanger.</h1>
 </body>
 </html>
