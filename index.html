@@ -24,12 +24,17 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* backgroundmusic */
 .background-music{display: none;}
 .name{position: fixed;top: 50%; letter-spacing: 10px; font-size: 40px; left: 50%; transform: translate(-50%, 0);}
 .director{position: fixed;top: 85%; left: 50%; transform: translate(-50%, 0); width: 800px;}
 .director h1{text-align: center;}
+/* menu */
 .menu{list-style-type: none; position: fixed;top: 0;left: 50%;transform: translate(-50%, 0);}
 .menu li+li{margin-left: 50px;}
+.menu a:link{text-decoration: none; color: white;}
+.menu a:hover{cursor: pointer;}
+.menu a:visited{color: white;}
 .bottom{list-style-type: none; position: fixed;bottom: 0;left: 50%;transform: translate(-50%, 0);}
 li{display:inline;}
 </style>
@@ -39,22 +44,16 @@ li{display:inline;}
     <div class="bg"></div>
     <div class="menu">
         <ul>
-            <li>About</li>
-            <li>Cast</li>
-            <li>Trailer</li>
-            <li>Soundtrack</li>
-            <li>Best Quotes</li>
+            <li><a href="./about.html">개요</a></li>
+            <li><a href="./character.html">등장인물</a></li>
+            <li><a href="./trailer.html">트레일러</a></li>
+            <li><a href="./soundtrack.html">사운드트랙</a></li>
+            <li><a href="./awards.html">수상</a></li>
         </ul>
     </div>
     <div class="bottom">
         <ul>
-            <li>Christian Bale</li>
-            <li>Michael Cane</li>
-            <li>Heath Legder</li>
-            <li>Gary Oldman</li>
-            <li>Aaron Eckhart</li>
-            <li>Maggie Gyllenhaal</li>
-            <li>Morgan Freeman</li>
+            
         </ul>
     </div>
     <h1 class="name"><img src="./img/walle_44b9ed49.png" alt=""></h1>
