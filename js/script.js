@@ -1,19 +1,4 @@
-var slideIndex = 0;
-showSlides();
-
-function showSlides() 
-{
-    var i;
-    var slides = document.getElementsByClassName("myslides");
-    for (i = 0; i < slides.length; i++) 
-    {
-        slides[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) 
-    {
-        slideIndex = 1
-    } 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 4000);
-}
+$(".phrase").fadeIn(3000);
+$(".menu").delay(5000).fadeIn("slow");
+$(".name").delay(5000).fadeIn("slow");
+$(".director").delay(5000).fadeIn("slow");
