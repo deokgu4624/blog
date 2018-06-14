@@ -7,20 +7,45 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Roboto&amp;subset=korean" rel="stylesheet">
     <title>Document</title>
     <style>
+        *{margin: 0; padding: 0;}
         @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Roboto&subset=korean');
-        body{background-color: white; color: black; width: 800px; margin: 0 auto; font-family: 'Nanum Gothic', sans-serif; line-height: 30px; font-weight: 600;}
-        .plot{height: 400px;}
-        .plot img{height: 100%; float: left; margin-right: 40px;}
-        h1{text-align: left;}
+        body{background-color: white; color: black; margin: 0 auto; font-family: 'Nanum Gothic', sans-serif; line-height: 30px; font-weight: 600;}
+        .menu{width:800px; position: absolute;top: 10px; left: 50%;transform: translate(-30%, 0); }
+        .menu ul{list-style-type: none;}
+        .menu li{display: inline;}
+        .menu li+li{margin-left: 6%;}
+        .menu a:link{text-decoration: none; color: white;}
+        .menu a:hover{cursor: pointer;}
+        .menu a:visited{color: white;}
+        .container{position: relative;}
+        img{width: 100%; margin-top: -10px; padding: 0;}
+        .plot1{width: 50%; position: absolute; top:30%; left: 50px; font-size: 30px; color: white; line-height: 50px;}
+        .plot2{width: 50%; position: absolute;bottom: 20%; left: 50%; font-size: 30px; color: white; line-height: 50px;}
+        .plot3{width: 50%; position: absolute; bottom: 20%; left: 100px; font-size: 30px; color: white; line-height: 50px;}
     </style>
 </head>
 <body>
-    <h1>Plot</h1>
-    <div class="plot">
-        <div>
-        </div>
+    <div class="container">
+        <img src="./img/wp1816232.jpg" alt="">
+        <div class="menu">
+                <ul>
+                    <li><a href="./plot.html">About</a></li>
+                    <li><a href="./character.html">Character</a></li>
+                    <li><a href="./design.html">Design</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./soundtrack.html">Soundtrack</a></li>
+                </ul>
+            </div>
+        <div class="plot1">WALL-E, short for Waste Allocation Load Lifter Earth-class, is the last robot left on Earth.</div>
     </div>
-    <h1>Trailer</h1>
+    <div class="container">
+        <img src="./img/ordinateur-bord-axiom-personnage-wall-e-04.jpg" alt="">
+        <div class="plot2">during 700 years, WALL-E has developed a personality, and he's more than a little lonely. Then he spots EVE</div>
+    </div>
+    <div class="container">
+        <img src="./img/walle-hoverchair08.jpg" alt="">
+        <div class="plot3">Smitten WALL-E embarks on his greatest adventure yet when he follows EVE across the galaxy.</div>
+    </div>
     <div class="trailer">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/4HaQgnPZ4Lo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/5O9ikywnW6M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
