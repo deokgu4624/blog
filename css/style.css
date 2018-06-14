@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Roboto&subset=korean');
+body, html {
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("./img/wall_e_4-wallpaper-1920x1080.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* backgroundmusic */
+.background-music{display: none;}
+.phrase{position: fixed;top: 20%; left: 30%; transform: translate(-30%, -20%); line-height: 50px;}
+.name{position: fixed;top: 80%; left: 50%; transform: translate(-50%, -80%);}
+.director{position: fixed;top: 88%; left: 50%; transform: translate(-50%, -88%); width: 800px;}
+.director h1{text-align: center;}
+/* menu */
+.menu{width:800px; list-style-type: none; position: fixed;top: 0;left: 60%;transform: translate(-60%, 0); font-family: 'Nanum Gothic', sans-serif; font-weight: 600; letter-spacing: 4px;}
+.menu li+li{margin-left: 6%;}
+.menu a:link{text-decoration: none; color: white;}
+.menu a:hover{cursor: pointer;}
+.menu a:visited{color: white;}
+.bottom{list-style-type: none; position: fixed;bottom: 0;left: 50%;transform: translate(-50%, 0);}
+li{display:inline;}
+
+*{margin: 0; padding: 0;}
+body{background-color: white; color: black; margin: 0 auto; font-family: 'Nanum Gothic', sans-serif; line-height: 30px; font-weight: 600;}
+.container{position: relative;}
+img{width: 100%; margin-top: -10px; padding: 0;}
+.plot1{width: 50%; position: absolute; top:30%; left: 50px; font-size: 30px; color: white; line-height: 50px;}
+.plot2{width: 50%; position: absolute;bottom: 20%; left: 50%; font-size: 30px; color: white; line-height: 50px;}
+.plot3{width: 50%; position: absolute; bottom: 20%; left: 100px; font-size: 30px; color: white; line-height: 50px;}
