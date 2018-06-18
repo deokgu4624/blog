@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Roboto&amp;subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/jquery.fullpage.js"></script>
+    <title>About</title>
     <style>
     </style>
 </head>
-<body>
+    <div class="fullpage">
     <div class="container">
         <img src="./img/wp1816232.jpg" alt="">
         <div class="menu">
@@ -40,7 +42,9 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/4HaQgnPZ4Lo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/5O9ikywnW6M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/script.js"></script>
+    </div>
+    <script type="text/javascript">
+    $(".fullpage").fullpage();
+    </script>
 </body>
 </html>
