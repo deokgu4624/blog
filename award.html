@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+    <div class="fullpage">
     <div class="container">
         <img src="./img/walle.jpg" alt="">
         <div class="menu">
@@ -23,29 +24,29 @@
                     <li><a href="./credit.html">Credit</a></li>
                 </ul>
             </div>
-        <div class="plot1">ACADEMY AWARDS<br>
+        <div class="award1">ACADEMY AWARDS<br>
             WINNER FOR ANIMATED FEATURE FILM<br>
             ANDREW STANTON</div>
     </div>
     <div class="container">
         <img src="./img/ordinateur-bord-axiom-personnage-wall-e-04.jpg" alt="">
-        <div class="plot2">NOMINATED FOR MUSIC (ORIGINAL SCORE)<br>
+        <div class="award2">NOMINATED FOR MUSIC (ORIGINAL SCORE)<br>
             THOMAS NEWMAN</div>
     </div>
     <div class="container">
         <img src="./img/walle-hoverchair08.jpg" alt="">
-        <div class="plot3">NOMINATED FOR MUSIC (ORIGINAL SONG)<br>
+        <div class="award3">NOMINATED FOR MUSIC (ORIGINAL SONG)<br>
             "DOWN TO EARTH" - MUSIC BY PETER GABRIEL<br>
             AND THOMAS NEWMAN; LYRICS BY PETER GABRIEL</div>
     </div>
     <div class="container">
         <img src="./img/walle-hoverchair08.jpg" alt="">
-        <div class="plot4">NOMINATED FOR SOUND MIXING<br>
+        <div class="award4">NOMINATED FOR SOUND MIXING<br>
             TOM MYERS, MICHAEL SEMANICK AND BEN BURTT</div>
     </div>
     <div class="container">
         <img src="./img/walle-hoverchair08.jpg" alt="">
-        <div class="plot4">NOMINATED FOR WRITING (ORIGINAL SCREENPLAY)<br>
+        <div class="award5">NOMINATED FOR WRITING (ORIGINAL SCREENPLAY)<br>
             ANDREW STANTON,<br>
             JIM REARDON<br>
             ORIGINAL STORY BY<br>
@@ -54,8 +55,31 @@
     <div class="director">
         <h1>FROM THE CREATORS OF "FINDING NEMO"</h1>
     </div>
+    </div>
     <script type="text/javascript">
-        $(".plot1").fadeIn(3000);
+    function award()
+    {
+        $(".award1").delay(1000).fadeIn("slow", function(){
+            $(this).delay(1000).fadeOut("slow", function(){
+                $(".award2").delay(1000).fadeIn("slow", function(){
+                    $(this).delay(1000).fadeOut("slow", function(){
+                        $(".award3").delay(1000).fadeIn("slow", function(){
+                            $(this).delay(1000).fadeOut("slow", function(){
+                                $(".award4").delay(1000).fadeIn("slow", function(){
+                                    $(this).delay(1000).fadeOut("slow", function(){
+                                        $(".award5").delay(1000).fadeIn("slow", function(){
+                                            $(this).delay(1000).fadeOut("slow")
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    });
+                });
+            });
+        });
+    }
+    setInterval(award(), "7000");
     </script>
 </body>
 </html>

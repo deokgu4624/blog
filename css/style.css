@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Roboto&subset=korean');
 *{margin: 0; padding: 0;}
-body{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 20px; margin: 0; padding: 0;}
+body{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 20px; margin: 0; padding: 0; color: white;}
 /* backgroundmusic */
 .background-music{display: none;}
 .phrase{display: none; position: fixed;top: 20%; left: 25%; transform: translate(-30%, -20%); line-height: 50px;}
 .phrase ul{list-style-type: none;}
 .name{display: none; position: fixed;top: 80%; left: 50%; transform: translate(-50%, -80%);}
-.director{display: none; position: absolute;top: 88%; left: 50%; transform: translate(-50%, -88%); width: 800px;}
+.director{display: none; position: fixed;top: 88%; left: 50%; transform: translate(-50%, -88%); width: 800px;}
 .director h1{text-align: center;}
 /* menu */
 .menu{width:800px; position: absolute;top: 10px; left: 50%;transform: translate(-30%, 0); }
@@ -19,8 +19,14 @@ body{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 20px; marg
 .fullpage{height:100vh; overflow: hidden;}
 .container{position: relative; height: 100vh; margin: 0; padding: 0;}
 .container img{height: 100vh; margin: 0; padding: 0;}
-.plot1{display: none; position: absolute;top: 88%; left: 50%; transform: translate(-50%, -88%); width: 800px;}
+.plot1{width: 50%; position: absolute; top:30%; left: 50px; font-size: 30px; color: white; line-height: 50px;}
 .plot2{width: 50%; position: absolute;bottom: 20%; left: 50%; font-size: 30px; color: white; line-height: 50px;}
 .plot3{width: 50%; position: absolute; bottom: 20%; left: 100px; font-size: 30px; color: white; line-height: 50px;}
 .plot4{width: 50%; position: absolute;bottom: 20%; left: 50%; font-size: 30px; color: white; line-height: 50px;}
+.award1{display: none; position: fixed;top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size:50px;}
+.award2{display: none; position: fixed;top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size:50px;}
+.award3{display: none; position: fixed;top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size:50px;}
+.award4{display: none; position: fixed;top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size:50px;}
+.award5{display: none; position: fixed;top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size:50px;}
 
+.preloader{background-color: black;}
