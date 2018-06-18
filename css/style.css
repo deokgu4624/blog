@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Roboto&subset=korean');
 *{margin: 0; padding: 0;}
-body{font-family: 'Roboto', sans-serif;}
+body{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 20px;}
 /* backgroundmusic */
 .background-music{display: none;}
 .phrase{display: none; position: fixed;top: 20%; left: 25%; transform: translate(-30%, -20%); line-height: 50px;}
@@ -21,3 +21,5 @@ body{font-family: 'Roboto', sans-serif;}
 .plot1{width: 50%; position: absolute; top:30%; left: 50px; font-size: 30px; color: white; line-height: 50px;}
 .plot2{width: 50%; position: absolute;bottom: 20%; left: 50%; font-size: 30px; color: white; line-height: 50px;}
 .plot3{width: 50%; position: absolute; bottom: 20%; left: 100px; font-size: 30px; color: white; line-height: 50px;}
+.plot4{width: 50%; position: absolute;bottom: 20%; left: 50%; font-size: 30px; color: white; line-height: 50px;}
+
