@@ -90,7 +90,7 @@ body {
   top: 50%; left: 50%; transform: translate(-50%, -50%);
   border-radius: 50%;
   margin: 0 auto;
-  background: rgb(89, 139, 133);
+  background: #0008a0;
   overflow: hidden;
 }
 #earth-surface {
@@ -142,7 +142,7 @@ body {
 }
 .surface {
   border-radius: 20px;
-  background-color: rgb(119, 111, 62);
+  background-color: #d9ff51;
   position: relative;
 }
 #surface-1 {
@@ -376,8 +376,35 @@ body {
             </div>
            <div id="mask"></div>
         </div>
+        <div><img class="picture1" src="./img/earth1.jpg" alt=""></div>
+        <div><img class="picture2" src="./img/earth2.jpg" alt=""></div>
+        <div><img class="picture3" src="./img/earth3.jpg" alt=""></div>
+        <div><img class="picture4" src="./img/earth4.jpg" alt=""></div>
         <script type="text/javascript">
-
+            $("#earth").mouseover(function(){
+                $(".picture1").fadeIn("slow");
+            })
+            $("#earth").mouseleave(function(){
+                $(".picture1").fadeOut("slow");
+            })
+            $("#earth").mouseover(function(){
+                $(".picture2").fadeIn("slow");
+            })
+            $("#earth").mouseleave(function(){
+                $(".picture2").fadeOut("slow");
+            })
+            $("#earth").mouseover(function(){
+                $(".picture3").fadeIn("slow");
+            })
+            $("#earth").mouseleave(function(){
+                $(".picture3").fadeOut("slow");
+            })
+            $("#earth").mouseover(function(){
+                $(".picture4").fadeIn("slow");
+            })
+            $("#earth").mouseleave(function(){
+                $(".picture4").fadeOut("slow");
+            })
         </script>
     </body>
 </html>
