@@ -30,3 +30,4 @@ body{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 20px; marg
 .picture2{position: fixed; top: 10%; left: 10%; width: 30%; display: none;}
 .picture3{position: fixed; top: 50%; left: 60%; width: 30%; display: none;}
 .picture4{position: fixed; top: 10%; left: 60%; width: 30%; display: none;}
+.credit{width: 50%; position: absolute;top:100%; left: 50%; font-size: 30px; text-align: center; transform: translate(-50%, 0); color: white; line-height: 50px;}
