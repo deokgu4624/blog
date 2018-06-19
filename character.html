@@ -10,9 +10,16 @@
     <script src="./js/jquery.fullpage.js"></script>
     <title>Character</title>
     <style>
+        .nyan{
+        z-index:10;
+        position:absolute;
+        width:34px;height:33px;
+        }
+        .nyan{background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/cockroach%20(2).ico');}
     </style>
 </head>
 <body>
+    <div class="nyan"></div>
     <div class="fullpage">
     <div class="container">
         <img src="./img/WALL-E.2008.1080p.BrRip.x264.YIFY.mp4_20180617_235625.650.jpg" alt="">
@@ -46,6 +53,30 @@
     </div>
     <script type="text/javascript">
     $(".fullpage").fullpage();
+    var posX = 100, posY = 100, px = 0, py = 0, an = false;
+    var nyan = $('.nyan');
+
+    $(document).on('mousemove', function( event ) {
+    posX = event.pageX;
+    posY = event.pageY;
+    })
+
+    function moveNyan()
+    {
+        var tamX = nyan.width()/2,
+        tamY = nyan.height()/2;
+        px += (posX - px - tamX) / 50;
+        py += (posY - py - tamY) / 50;
+    
+        nyan.css({
+        left: px + 'px',
+        top: py + 'px'
+        });
+    }
+
+    window.setInterval(function(){
+    moveNyan();
+    }, 10);
     </script>
 </body>
 </html>
