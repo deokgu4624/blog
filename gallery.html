@@ -100,6 +100,12 @@ body {
         // set up a background image for each tile based on data-image attribute
         .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
     })
+    $("li").mouseover(function(){
+            $(this).addClass("selected");
+        })
+    $("li").mouseleave(function(){
+            $(this).removeClass("selected");
+        })
       </script>
 </body>
 </html>

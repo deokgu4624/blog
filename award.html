@@ -70,6 +70,12 @@
         slides[slideIndex-1].style.display = $(slides[slideIndex-1]).fadeIn("slow");
         setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
+    $("li").mouseover(function(){
+            $(this).addClass("selected");
+        })
+    $("li").mouseleave(function(){
+            $(this).removeClass("selected");
+        })
     </script>
 </body>
 </html>

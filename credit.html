@@ -190,7 +190,12 @@
         $(".credit6").delay(60000).fadeOut("slow");
         $(".credit7").delay(70000).fadeOut("slow");
         $(".credit8").delay(80000).fadeOut("slow");
-
+        $("li").mouseover(function(){
+            $(this).addClass("selected");
+        })
+        $("li").mouseleave(function(){
+            $(this).removeClass("selected");
+        })
     </script>
 </body>
 </html>

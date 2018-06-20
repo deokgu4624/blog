@@ -14,6 +14,7 @@
         z-index:10;
         position:absolute;
         width:34px;height:33px;
+        pointer-events: none;
         }
         .nyan{background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/cockroach%20(2).ico');}
     </style>
@@ -78,6 +79,12 @@
     window.setInterval(function(){
     moveNyan();
     }, 10);
+    $("li").mouseover(function(){
+            $(this).addClass("selected");
+        })
+    $("li").mouseleave(function(){
+            $(this).removeClass("selected");
+        })
     </script>
 </body>
 </html>
