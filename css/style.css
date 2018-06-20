@@ -10,7 +10,7 @@ body{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 20px; marg
 .director{display: none; position: fixed;top: 88%; left: 50%; transform: translate(-50%, -88%); width: 800px;}
 .director h1{text-align: center;}
 /* menu */
-.menu{width:800px; position: absolute;top: 10px; left: 50%;transform: translate(-50%, 0); text-align: center;}
+.menu{width:800px; position: absolute;top: 10px; left: 50%;transform: translate(-50%, 0); text-align: center; z-index: 2;}
 .menu ul{list-style-type: none;}
 .menu li{display: inline;}
 .menu li+li{margin-left: 6%;}
@@ -31,6 +31,9 @@ body{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 20px; marg
 .picture3{position: fixed; top: 50%; left: 60%;width: 30%;height: 30%;  display: none; border-radius: 30px;}
 .picture4{position: fixed; top: 10%; left: 60%;width: 30%;height: 30%;  display: none; border-radius: 30px;}
 .axiom1{display: none; position: fixed;top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; line-height: 50px; width: 800px;}
+.gallery1{position: fixed; top:50%; left: 15%; transform: translate(-50%, -50%); color: white; font-size: 50px;}
+.gallery2{position: fixed; top:50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 50px;}
+.gallery3{position: fixed; top:50%; left: 83%; transform: translate(-50%, -50%); color: white; font-size: 50px;}
 .credit{width: 50%; position: absolute;top:100%; left: 50%; font-size: 30px; text-align: center; transform: translate(-50%, 0); color: white; line-height: 50px;}
 
 
