@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <style>
+        body, html {
+        height: 100%;
+        margin: 0;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        }
+        .bg{
+            background-image: url("./img/world3.jpg");
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        img {
+            width: 20%;
+            height: 25%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transition: all 3s ease-in-out
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./character.html">Character</a></li>
+            <li><a href="./axiom.html">World Design</a></li>
+            <li><a href="./award.html">Award</a></li>
+            <li><a href="./credit.html">Credit</a></li>
+        </ul>
+    </div>
+    <div class="axiom1" style="display: none;">
+        Axiom<br>
+        The luxury spaceship Axiom cuts an impressive profile. But unlike the mammoth space vehicles in most science fiction epics, it wasn’t designed to inspire fear or engage in deep space battle. Instead the Pixar team envisioned the last refuge of a consumer culture, a self-contained world built by the Buy n' Large Corporation, loaded with excess and wandering adrift with the remnants of human race.
+    </div>
+    <img class="axiom" src="./img/axiom.png">
+    <div class="bg"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        'use strict';
+        var x, y, bool;
+        $(window).mousedown(function () {
+            bool = true;
+            $(this).mousemove(function (e) {
+            x = e.clientX;
+            y = e.clientY;
+            $(this).mouseup(function () {
+                bool = false;
+                $("img").css({"left": x, "top": y});
+            });
+            });
+        });
+        });
+        $(".axiom").mouseover(function(){
+            $(".axiom1").fadeIn("slow");
+        })
+        $(".axiom").mouseleave(function(){
+            $(".axiom1").fadeOut("slow");
+        })
+    </script>
+</body>
+</html>
