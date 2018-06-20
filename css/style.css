@@ -21,7 +21,7 @@ body{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 20px; marg
 .container{position: relative; height: 100vh; margin: 0; padding: 0;}
 .container img{height: 100vh; margin: 0; padding: 0;}
 .trailer{position: relative; min-height: 100%; min-width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size:50px;}
-.plot1{width: 50%; position: absolute; top:30%; left: 50px; font-size: 30px; color: white; line-height: 50px;}
+.plot1{display:none; width: 50%; position: absolute; top:30%; left: 50px; font-size: 30px; color: white; line-height: 50px;}
 .plot2{width: 50%; position: absolute;bottom: 20%; left: 45%; font-size: 30px; color: white; line-height: 50px;}
 .plot3{width: 50%; position: absolute; bottom: 20%; left: 100px; font-size: 30px; color: white; line-height: 50px;}
 .plot4{width: 50%; position: absolute;bottom: 20%; left: 45%; font-size: 30px; color: white; line-height: 50px;}
